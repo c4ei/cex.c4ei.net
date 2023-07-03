@@ -1,7 +1,9 @@
 import axios from 'axios'
 axios.defaults.withCredentials = true
 
-const baseApi = 'http://localhost:4000/secure/api'
+// const baseApi = 'http://localhost:4000/secure/api'
+const baseApi = 'https://cexapi.c4ei.net/secure/api'
+// const baseApi = 'https://cexapi.c4ei.net'
 
 // Endpoints usuario
 const loginApi = `${baseApi}/user/login`

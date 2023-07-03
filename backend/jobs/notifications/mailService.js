@@ -2,20 +2,20 @@ const nodemailer = require('nodemailer')
 let mailTransporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'metadappexchange@gmail.com',
-        pass: 'ewdtxjmowybhjqim'
+        user: 'help.c4ei.net@gmail.com',
+        pass: 'Asdf123$'
     }
 })
 
 const sendDepositEmail = async (amount, coin, toEmail) => {
     const mailDetails = {
-        from: 'MetaDapp Exchange <correo>',
+        from: 'CexC4EI Exchange <correo>',
         to: toEmail,
-        subject: `[MetaDapp] Confirmación de Depósito`,
+        subject: `[CexC4EI] Deposit Confirmation`,
         html: `<h3><strong>Depositado completado correctamente</strong></h3>
-        <p>Tu deposito de ${amount} ${coin.toUpperCase()} 
-        ya está disponible en tu cuenta de MetaDapp. 
-        <a style="text-decoration: none;" href="http://localhost:3000/wallet/${coin.toLowerCase()}"
+        <p>your deposit of ${amount} ${coin.toUpperCase()} 
+        is now available in your CexC4EI account.
+        <a style="text-decoration: none;" href="https://cex.c4ei.net/wallet/${coin.toLowerCase()}"
          target="_blank" rel="noopener">Comprueba tu balance aquí.</a></p>`
     }
 
@@ -24,15 +24,15 @@ const sendDepositEmail = async (amount, coin, toEmail) => {
 
 const sendWithdrawEmail = async (amount, coin, toAddress, txId, toEmail) => {
     const mailDetails = {
-        from: 'MetaDapp Exchange <correo>',
+        from: 'C4EI Exchange',
         to: toEmail,
-        subject: `[MetaDapp] Confirmación de Retiro`,
-        html: `<h3><strong>Retiro completado correctamente</strong></h3>
-        <div>Has realizado una retirada de ${amount} ${coin.toUpperCase()} 
-        en tu cuenta de MetaDapp.</div>
+        subject: `[CexC4EI] Withdrawal Confirmation`,
+        html: `<h3><strong>Withdrawal completed successfully</strong></h3>
+        <div>You have made a withdrawal from ${amount} ${coin.toUpperCase()} 
+        in your CexC4EI account.</div>
         <div>&nbsp;</div>
-        <div><strong>Dirección de retiro:</strong> ${toAddress}</div>
-        <div><strong>ID de Transacción:</strong> ${txId}</div>`
+        <div><strong>withdrawal address:</strong> ${toAddress}</div>
+        <div><strong>Transaction's ID:</strong> ${txId}</div>`
     }
 
     return await mailTransporter.sendMail(mailDetails)

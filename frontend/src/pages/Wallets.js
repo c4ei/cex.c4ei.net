@@ -60,14 +60,14 @@ export default function Wallets() {
                         <Box marginTop={4} marginBottom={2}>
                             <FormControl fullWidth>
                                 <InputLabel id="select-coin-label">
-                                    {`Selecciona una moneda`}
+                                    {`currency selection`}
                                 </InputLabel>
                                 <Select
                                     labelId="select-coin-label"
                                     id="select-coin"
                                     value={selectedCoin}
                                     onChange={handleCoinChange}
-                                    label={`Selecciona una moneda`}
+                                    label={`currency selection`}
                                 >
                                     {
                                         getCoinList().map((coin) => {
@@ -90,7 +90,7 @@ export default function Wallets() {
                             <Button
                                 onClick={handleCreateWallet}
                                 color="info">
-                                IR A MI BILLETERA ({selectedCoin.toUpperCase()})
+                                go to my wallet ({selectedCoin.toUpperCase()})
                             </Button>
                         </Box>
                     </Paper>

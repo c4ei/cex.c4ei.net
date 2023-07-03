@@ -5,10 +5,11 @@ const getNetworkName = (chainId) => {
 const getCoinList = () => {
     return [
         'bnb',
-        'avax',
-        'ftm',
+        // 'avax',
+        // 'ftm',
         'eth',
-        'matic'
+        'matic',
+        'c4ei'
     ]
 }
 
@@ -16,10 +17,11 @@ const getCoinLogo = (coin) => {
     const baseApi = 'https://cryptologos.cc/logos'
     return {
         bnb: `${baseApi}/bnb-bnb-logo.png`,
-        avax: `${baseApi}/avalanche-avax-logo.png`,
+        // avax: `${baseApi}/avalanche-avax-logo.png`,
         eth: `${baseApi}/ethereum-eth-logo.png`,
         matic: `${baseApi}/polygon-matic-logo.png`,
-        ftm: `${baseApi}/fantom-ftm-logo.png`
+        // ftm: `${baseApi}/fantom-ftm-logo.png`,
+        c4ei: `https://cex.c4ei.net/c4ei-logo.png`
     }[coin.toLowerCase()]
 }
 

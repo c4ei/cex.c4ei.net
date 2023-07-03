@@ -20,8 +20,8 @@ export default function MyWallets() {
         <Table size="small">
             <TableHead>
                 <TableRow>
-                    <TableCell>Moneda</TableCell>
-                    <TableCell>Dirección</TableCell>
+                    <TableCell>your wallet</TableCell>
+                    <TableCell>Address</TableCell>
                     <TableCell>Balance</TableCell>
                 </TableRow>
             </TableHead>

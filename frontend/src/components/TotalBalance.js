@@ -15,11 +15,11 @@ export default function TotalBalance() {
                 ${parseFloat(walletBalance).toFixed(2)}
             </Typography>
             <Typography color="text.secondary" sx={{ flex: 1 }}>
-                de todas tus criptomonedas
+                all your cryptocurrencies
             </Typography>
             <div>
                 <Link color="primary" href="/wallets">
-                    Tu billetera
+                    wallets
                 </Link>
             </div>
         </React.Fragment>

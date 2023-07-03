@@ -82,14 +82,14 @@ export default function CoinTransactions({ transactions, coin, chainId }) {
                     p: 2
                 }}>
                 <React.Fragment>
-                    <Title>Historial de transacciones</Title>
+                    <Title>transaction history</Title>
                     <Table size="small">
                         <TableHead>
                             <TableRow>
-                                <TableCell>ID Transacción</TableCell>
-                                <TableCell>Cantidad</TableCell>
-                                <TableCell>Estado</TableCell>
-                                <TableCell>Fecha</TableCell>
+                                <TableCell>Transaction ID</TableCell>
+                                <TableCell>Amount</TableCell>
+                                <TableCell>state</TableCell>
+                                <TableCell>Date</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
@@ -141,7 +141,7 @@ export default function CoinTransactions({ transactions, coin, chainId }) {
             >
                 <DialogTitle id="alert-dialog-title">
                     {`Detalles de ${selectedTransaction
-                        ? selectedTransaction.nature === 1 ? 'Depósito' : 'Retirada' : 'Transacción'}`}
+                        ? selectedTransaction.nature === 1 ? 'Deposit' : 'Withdrawal' : 'Transaction'}`}
                 </DialogTitle>
                 <DialogContent>
                     {
@@ -152,7 +152,7 @@ export default function CoinTransactions({ transactions, coin, chainId }) {
                                         <Grid item xs={1}>
 
                                             <Typography variant="body2" color="text.secondary" mb={1}>
-                                                Estado
+                                            state
                                             </Typography>
                                         </Grid>
                                         <Grid item xs={3}></Grid>
@@ -166,7 +166,7 @@ export default function CoinTransactions({ transactions, coin, chainId }) {
                                             >
                                                 <span style={{ fontSize: '1.2rem' }}>●</span>
 
-                                                {selectedTransaction.status === 2 ? selectedTransaction.confirmations > 0 ? `Confirmación ${selectedTransaction.confirmations}/12` : getStatusName(selectedTransaction.status)
+                                                {selectedTransaction.status === 2 ? selectedTransaction.confirmations > 0 ? `Confirmation ${selectedTransaction.confirmations}/12` : getStatusName(selectedTransaction.status)
                                                     : getStatusName(selectedTransaction.status)}
                                             </Typography>
                                         </Grid>
@@ -176,7 +176,7 @@ export default function CoinTransactions({ transactions, coin, chainId }) {
                                     <Grid container columns={6}>
                                         <Grid item xs={1}>
                                             <Typography variant="body2" color="text.secondary" mb={1}>
-                                                Fecha
+                                            Date
                                             </Typography>
                                         </Grid>
                                         <Grid item xs={3}></Grid>
@@ -193,7 +193,7 @@ export default function CoinTransactions({ transactions, coin, chainId }) {
                                     <Grid container columns={6}>
                                         <Grid item xs={1}>
                                             <Typography variant="body2" color="text.secondary" mb={1}>
-                                                Moneda
+                                                your wallet
                                             </Typography>
                                         </Grid>
                                         <Grid item xs={3}></Grid>
@@ -217,8 +217,8 @@ export default function CoinTransactions({ transactions, coin, chainId }) {
                                         <Grid item xs={2}>
                                             <Typography variant="body2" color="text.secondary" mb={1}>
                                                 {
-                                                    `Cantidad de${selectedTransaction
-                                                        ? selectedTransaction.nature === 1 ? 'l Depósito' : 'l Retiro' : ' la Transacción'}`
+                                                    `Amount of${selectedTransaction
+                                                        ? selectedTransaction.nature === 1 ? 'l Deposit' : 'l Withdrawal' : 'Transaction'}`
                                                 }
                                             </Typography>
                                         </Grid>
@@ -256,7 +256,7 @@ export default function CoinTransactions({ transactions, coin, chainId }) {
                                             <Grid container columns={6}>
                                                 <Grid item xs={2}>
                                                     <Typography variant="body2" color="text.secondary" mb={1}>
-                                                        Comisión de la red
+                                                    network commission
                                                     </Typography>
                                                 </Grid>
                                                 <Grid item xs={2}></Grid>
@@ -272,7 +272,7 @@ export default function CoinTransactions({ transactions, coin, chainId }) {
                                             <Grid container columns={6}>
                                                 <Grid item xs={1}>
                                                     <Typography variant="body2" color="text.secondary" mb={1}>
-                                                        Dirección
+                                                    Address
                                                     </Typography>
                                                 </Grid>
                                                 <Grid item xs={5}>
@@ -284,7 +284,7 @@ export default function CoinTransactions({ transactions, coin, chainId }) {
                                                             <IconButton>
                                                                 <img
                                                                     src={LinkIcon}
-                                                                    alt="abrir"
+                                                                    alt="Open"
                                                                     style={{ width: "100%", height: "100%" }}
                                                                 />
                                                             </IconButton>
@@ -301,7 +301,7 @@ export default function CoinTransactions({ transactions, coin, chainId }) {
                                                                             Dirección copiada!
                                                                         </Typography>
                                                                     ) : (
-                                                                        "Copiar"
+                                                                        "Copy"
                                                                     )
                                                                 }
                                                                 TransitionComponent={Zoom}
@@ -309,7 +309,7 @@ export default function CoinTransactions({ transactions, coin, chainId }) {
                                                                 <IconButton>
                                                                     <img
                                                                         src={CopyIcon}
-                                                                        alt="copiar"
+                                                                        alt="Copy"
                                                                         style={{ width: "100%", height: "100%" }}
                                                                     />
                                                                 </IconButton>
@@ -339,7 +339,7 @@ export default function CoinTransactions({ transactions, coin, chainId }) {
                                                             <IconButton>
                                                                 <img
                                                                     src={LinkIcon}
-                                                                    alt="abrir"
+                                                                    alt="Open"
                                                                     style={{ width: "100%", height: "100%" }}
                                                                 />
                                                             </IconButton>
@@ -353,7 +353,7 @@ export default function CoinTransactions({ transactions, coin, chainId }) {
                                                                 title={
                                                                     txCopied ? (
                                                                         <Typography variant="caption" color="text.success">
-                                                                            TxID copiado!
+                                                                            TxID copied!
                                                                         </Typography>
                                                                     ) : (
                                                                         "Copiar"

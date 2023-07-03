@@ -137,7 +137,7 @@ export default function Wallet() {
                                                 </FormControl>
                                             </Box>
                                             <Typography variant="caption" color="text.secondary">
-                                                Tu dirección de {walletInfo.coin} ({getNetworkName(walletInfo.chainId)})
+                                            Your address of {walletInfo.coin} ({getNetworkName(walletInfo.chainId)})
                                             </Typography>
                                             <Stack direction="row" alignItems="center" spacing={2} my={2}>
                                                 <Box
@@ -165,7 +165,7 @@ export default function Wallet() {
                                                                 title={
                                                                     copied ? (
                                                                         <Typography variant="caption" color="text.success">
-                                                                            Dirección copiada!
+                                                                            Address copied!
                                                                         </Typography>
                                                                     ) : (
                                                                         "Copiar"
@@ -196,7 +196,7 @@ export default function Wallet() {
                                                     <Input
                                                         value={withdrawAddress || ''}
                                                         onChange={handleInputAddress}
-                                                        placeholder={`Dirección ${getNetworkName(walletInfo.chainId)}...`}
+                                                        placeholder={`Address ${getNetworkName(walletInfo.chainId)}...`}
                                                         fullWidth
                                                     />
                                                 </Grid>
@@ -206,7 +206,7 @@ export default function Wallet() {
                                                         disabled={!(withdrawAmount > 0 && withdrawAmount <= walletInfo.balance && withdrawAddress)}
                                                         onClick={handleWithdraw}
                                                         variant="contained" color="error">
-                                                        RETIRAR
+                                                        TO REMOVE
                                                     </Button>
                                                 </Grid>
                                             </Grid>
@@ -218,13 +218,13 @@ export default function Wallet() {
                                                         type='number'
                                                         onChange={handleInputAmount}
                                                         value={withdrawAmount || ''}
-                                                        placeholder={`Monto a retirar...`}
+                                                        placeholder={`Amount to withdraw...`}
                                                         fullWidth
                                                     />
                                                 </Grid>
                                                 <Grid item xs={3}>
                                                     <Typography textAlign='left' variant="caption" color="text.secondary">
-                                                        Comisión: {getCoinFee(walletInfo.coin)} {walletInfo.coin}
+                                                    commission: {getCoinFee(walletInfo.coin)} {walletInfo.coin}
                                                     </Typography>
                                                 </Grid>
                                             </Grid>
@@ -234,10 +234,10 @@ export default function Wallet() {
 
                                         onClick={handleCreateWallet}
                                         color="info">
-                                        CREAR BILLETERA PARA {walletId.toUpperCase()} AHORA
+                                        CREATE WALLET FOR{walletId.toUpperCase()} NOW
                                     </Button>
                                 :
-                                <>Cargando...</>
+                                <>Charging...</>
                             }
                         </Box>
                     </React.Fragment>
