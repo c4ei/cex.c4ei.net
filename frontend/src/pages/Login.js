@@ -66,7 +66,7 @@ export default function Login() {
                     variant="contained"
                     sx={{ mt: 3, mb: 2 }}
                 >
-                    Iniciar sesión
+                    log in
                 </Button>
                 <Grid container justifyContent="flex-end">
                     <Grid item>

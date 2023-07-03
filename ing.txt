@@ -2,8 +2,8 @@ ing
 
 2023-07-03
 
-cd /home/dev/www/cex.c4ei.net/backend
-yarn test
+cd /home/dev/www/cex.c4ei.net/backend/app-core
+yarn start:prod
 
 
 cd /home/dev/www/cex.c4ei.net/frontend

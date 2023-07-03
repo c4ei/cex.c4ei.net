@@ -47,7 +47,7 @@ export default function Register() {
                             required
                             fullWidth
                             id="firstName"
-                            label="Nombre"
+                            label="firstName"
                             autoFocus
                         />
                     </Grid>
@@ -56,7 +56,7 @@ export default function Register() {
                             required
                             fullWidth
                             id="lastName"
-                            label="Apellidos"
+                            label="lastName"
                             name="lastName"
                             autoComplete="family-name"
                         />
@@ -66,7 +66,7 @@ export default function Register() {
                             required
                             fullWidth
                             id="email"
-                            label="Correo electrónico"
+                            label="email"
                             name="email"
                             autoComplete="email"
                         />
@@ -76,7 +76,7 @@ export default function Register() {
                             required
                             fullWidth
                             name="password"
-                            label="Contraseña"
+                            label="password"
                             type="password"
                             id="password"
                             autoComplete="new-password"
