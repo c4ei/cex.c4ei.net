@@ -7,12 +7,12 @@ export default function Copyright(props) {
             variant="body2"
             color="text.secondary"
             align="center" {...props}>
-            {'Copyright © '}
+            {/* {'Copyright © '} */}
             <Link color="inherit" href="https://c4ei.net/">
                 c4ei.net
             </Link>{' '}
             {new Date().getFullYear()}
-            {'.'}
+            {/* {'.'} */}
         </Typography>
     )
 }

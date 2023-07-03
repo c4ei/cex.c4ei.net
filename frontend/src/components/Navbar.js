@@ -58,7 +58,7 @@ function DashboardContent() {
             window.location.reload(false)
         }
 
-        if (event.target.innerHTML === 'Mi billetera') {
+        if (event.target.innerHTML === 'My wallet') {
             history.push('/wallets')
         }
 
@@ -66,7 +66,7 @@ function DashboardContent() {
     }
 
     if (auth) {
-        settings = [`Hi, ${auth.firstName}`, 'Mi billetera', 'Logout']
+        settings = [`Hi, ${auth.firstName}`, 'My wallet', 'Logout']
         return (
             <AppBar position="absolute">
                 <Toolbar

@@ -27,6 +27,7 @@ const transactionScheme = mongoose.Schema({
         default: 1,
         index: true
     } //1. Aprobando, 2. Procesando, 3. Procesado, 4. Cancelado
+    //1. Approving, 2. Processing, 3. Processed, 4. Canceled
 })
 
 module.exports = mongoose.model('Transaction', transactionScheme)

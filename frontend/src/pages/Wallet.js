@@ -120,13 +120,13 @@ export default function Wallet() {
                                             <Box marginTop={3}>
                                                 <FormControl fullWidth disabled>
                                                     <InputLabel id="select-network-label">
-                                                        {`Selecciona la red para ${walletId.toUpperCase()}`}
+                                                        {`Select the network to ${walletId.toUpperCase()}`}
                                                     </InputLabel>
                                                     <Select
                                                         labelId="select-network-label"
                                                         id="select-network"
                                                         value={defaultNetworkId}
-                                                        label={`Selecciona la red para ${walletId.toUpperCase()}`}
+                                                        label={`Select the network to ${walletId.toUpperCase()}`}
                                                     >
                                                         {
                                                             getNetWorkList(walletId).map((network) => {
@@ -234,7 +234,7 @@ export default function Wallet() {
 
                                         onClick={handleCreateWallet}
                                         color="info">
-                                        CREATE WALLET FOR{walletId.toUpperCase()} NOW
+                                        CREATE WALLET FOR {walletId.toUpperCase()} NOW
                                     </Button>
                                 :
                                 <>Charging...</>
