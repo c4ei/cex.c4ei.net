@@ -97,7 +97,7 @@ export default function Register() {
                 <Grid container justifyContent="flex-end">
                     <Grid item>
                         <Link href="/login" variant="body2">
-                            ¿Ya tienes una cuenta? Inicia sesión
+                            Already have an account? log in
                         </Link>
                     </Grid>
                 </Grid>

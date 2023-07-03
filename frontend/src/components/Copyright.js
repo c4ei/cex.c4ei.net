@@ -8,8 +8,8 @@ export default function Copyright(props) {
             color="text.secondary"
             align="center" {...props}>
             {'Copyright © '}
-            <Link color="inherit" href="https://metadapp.dev/">
-                metadapp.dev
+            <Link color="inherit" href="https://c4ei.net/">
+                c4ei.net
             </Link>{' '}
             {new Date().getFullYear()}
             {'.'}

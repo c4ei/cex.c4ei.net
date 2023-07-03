@@ -23,5 +23,10 @@ module.exports = {
         decimals: 18,
         min_withdraw: 13,
         fee: 0.1
+    },
+    C4EI: {
+        decimals: 18,
+        min_withdraw: 1,
+        fee: 0.2
     }
 }

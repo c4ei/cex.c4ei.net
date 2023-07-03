@@ -34,7 +34,7 @@ export default function Login() {
                 <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
-                Inicia sesión
+                Log In
             </Typography>
             <Box sx={{ width: '30%', mt: 3 }} component="form" onSubmit={handleSubmit} noValidate>
                 <TextField
@@ -42,7 +42,7 @@ export default function Login() {
                     required
                     fullWidth
                     id="email"
-                    label="Correo electrónico"
+                    label="Email"
                     name="email"
                     autoComplete="email"
                     autoFocus
@@ -52,7 +52,7 @@ export default function Login() {
                     required
                     fullWidth
                     name="password"
-                    label="Contraseña"
+                    label="password"
                     type="password"
                     id="password"
                     autoComplete="current-password"
@@ -71,7 +71,7 @@ export default function Login() {
                 <Grid container justifyContent="flex-end">
                     <Grid item>
                         <Link href="/register" variant="body2">
-                            ¿No tienes una cuenta? Regístrate
+                            Don't have an account? sign up
                         </Link>
                     </Grid>
                 </Grid>

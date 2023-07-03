@@ -30,6 +30,13 @@ const getDefaultCoin = () => {
 const getNetWorkList = (coin) => {
     const networks = [
         {
+            id: 21004,
+            name: 'C4EI Chain',
+            abbr: 'c4ei',
+            coin: 'c4ei',
+            explorerBase: 'https://exp.c4ei.net/tx/'
+        },
+        {
             id: 97,
             name: 'Binance Smart Chain',
             abbr: 'bsc',
@@ -73,6 +80,7 @@ const getNetWorkList = (coin) => {
 
 const getDefaultNetworkId = (coin) => {
     return {
+        c4ei: 21004,
         bnb: 97,
         avax: 43113,
         eth: 5,
