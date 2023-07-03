@@ -9,6 +9,7 @@ backend/config/.env
 backend/app-core/.env
 backend/jobs/notifications/mailService.js
 
+
 frontend/.DS_Store
 frontend/node_modules
 frontend/package-lock.json

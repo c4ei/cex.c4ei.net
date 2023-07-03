@@ -39,25 +39,18 @@ const getNetWorkList = (coin) => {
             explorerBase: 'https://exp.c4ei.net/tx/'
         },
         {
-            id: 97,
+            id: 56,
             name: 'Binance Smart Chain',
             abbr: 'bsc',
             coin: 'bnb',
-            explorerBase: 'https://testnet.bscscan.com/tx/'
+            explorerBase: 'https://bscscan.com/tx/'
         },
         {
-            id: 43113,
-            name: 'Avalanche',
-            abbr: 'avalanche',
-            coin: 'avax',
-            explorerBase: 'https://testnet.snowtrace.io/tx/'
-        },
-        {
-            id: 5,
+            id: 1,
             name: 'Ethereum',
             abbr: 'ethereum',
             coin: 'eth',
-            explorerBase: 'https://goerli.etherscan.io/tx/'
+            explorerBase: 'https://etherscan.io/tx/'
         },
         {
             id: 4002,
@@ -67,7 +60,14 @@ const getNetWorkList = (coin) => {
             explorerBase: 'https://testnet.ftmscan.com/tx/'
         },
         {
-            id: 80001,
+            id: 43113,
+            name: 'Avalanche',
+            abbr: 'avalanche',
+            coin: 'avax',
+            explorerBase: 'https://testnet.snowtrace.io/tx/'
+        },
+        {
+            id: 137,
             name: 'Polygon',
             abbr: 'polygon',
             coin: 'matic',
@@ -83,11 +83,11 @@ const getNetWorkList = (coin) => {
 const getDefaultNetworkId = (coin) => {
     return {
         c4ei: 21004,
-        bnb: 97,
+        bnb: 56,
         avax: 43113,
-        eth: 5,
+        eth: 1,
         ftm: 4002,
-        matic: 80001
+        matic: 137
     }[coin.toLowerCase()]
 }
 
@@ -102,6 +102,7 @@ const getCoinFee = (coin) => {
         case 'ETH': return 0.005;
         case 'MATIC': return 0.1;
         case 'FTM': return 0.5;
+        case 'C4EI': return 0.2;
     }
 }
 
@@ -112,6 +113,7 @@ const getCoinDecimalsPlace = (coin) => {
         case 'ETH': return 8;
         case 'MATIC': return 2;
         case 'FTM': return 2;
+        case 'C4EI': return 8;
     }
 
     return 8;
