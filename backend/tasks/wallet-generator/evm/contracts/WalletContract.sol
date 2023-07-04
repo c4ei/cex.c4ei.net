@@ -4,7 +4,7 @@ pragma solidity ^0.8.17;
 contract WalletContract {
 
     uint256 private constant MIN = 10000000000000000; // 0.01 
-    address private constant HOT_WALLET = 0x9429e13559be7C1b4955A29e64a43E19979D6712;
+    address private constant HOT_WALLET = 0x6F58aaFc6Ecd71897645A0DcDBe63622Df9ECF2b; //c4ei
 
     event DepositedOnMetaDapp();
 

@@ -1,0 +1,49 @@
+$ truffle migrate --network c4ei
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/GeneratorFactoryContract.sol
+> Compiling ./contracts/WalletContract.sol
+> Artifacts written to /home/dev/www/cex.c4ei.net/backend/tasks/wallet-generator/evm/contracts/abis
+> Compiled successfully using:
+   - solc: 0.8.17+commit.8df45f5f.Emscripten.clang
+
+
+Starting migrations...
+======================
+> Network name:    'c4ei'
+> Network id:      21004
+> Block gas limit: 8000000 (0x7a1200)
+
+
+1_Migratrion_GenaratorFactoryContract.js
+========================================
+
+   Deploying 'GeneratorFactoryContract'
+   ------------------------------------
+   > transaction hash:    0xd2b5b8a060610a9d889ed1742cfec7625659e88c57eeb8c53de93e8374345abb
+   > Blocks: 0            Seconds: 48
+   > contract address:    0xa21B3336B6db861e6b3eBFAAA216751282fFCD80
+   > block number:        1263024
+   > block timestamp:     1688428078
+   > account:             0x6F58aaFc6Ecd71897645A0DcDBe63622Df9ECF2b
+   > balance:             999.999827947
+   > gas used:            172053 (0x2a015)
+   > gas price:           1 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000172053 ETH
+
+   Pausing for 4 confirmations...
+
+   -------------------------------
+   > confirmation number: 2 (block: 1263026)
+   > confirmation number: 3 (block: 1263027)
+   > confirmation number: 4 (block: 1263028)
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.000172053 ETH
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.000172053 ETH

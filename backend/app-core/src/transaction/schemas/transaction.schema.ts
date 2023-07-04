@@ -33,7 +33,7 @@ export class Transaction {
         index: true,
         default: 1
     })
-    status: number; //1. Aprobando, 2. Procesando, 3. Procesado, 4. Cancelado
+    status: number; //1. Aprobando, 2. Procesando, 3. Procesado, 4. Cancelado 1. Approving, 2. Processing, 3. Processed, 4. Canceled
 }
 
 export const TransactionSchema = SchemaFactory.createForClass(Transaction); 

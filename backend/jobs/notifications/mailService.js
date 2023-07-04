@@ -9,14 +9,14 @@ let mailTransporter = nodemailer.createTransport({
 
 const sendDepositEmail = async (amount, coin, toEmail) => {
     const mailDetails = {
-        from: 'CexC4EI Exchange <correo>',
+        from: 'CexC4EI Exchange <c4ei>',
         to: toEmail,
         subject: `[CexC4EI] Deposit Confirmation`,
-        html: `<h3><strong>Depositado completado correctamente</strong></h3>
+        html: `<h3><strong>Deposited completed successfully</strong></h3>
         <p>your deposit of ${amount} ${coin.toUpperCase()} 
         is now available in your CexC4EI account.
         <a style="text-decoration: none;" href="https://cex.c4ei.net/wallet/${coin.toLowerCase()}"
-         target="_blank" rel="noopener">Comprueba tu balance aquí.</a></p>`
+         target="_blank" rel="noopener">Check your balance here.</a></p>`
     }
 
     return await mailTransporter.sendMail(mailDetails)

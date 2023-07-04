@@ -7,7 +7,7 @@ const WalletContract = require(`${appRoot}/config/models/WalletContract`)
 const GeneratorFactory = require('./factories/generatorFactory')
 
 var amount = process.argv[2] || 0
-const network = process.argv[3] || 97
+const network = process.argv[3] || 21004
 
 const { rpc, g_address_pk, g_address } = require(`${appRoot}/config/chains/${network}`)
 

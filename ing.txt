@@ -9,3 +9,7 @@ yarn start:prod
 cd /home/dev/www/cex.c4ei.net/frontend
 yarn start
 
+WITHDRAW_FROM_WALLET=0x6F58aaFc6Ecd71897645A0DcDBe63622Df9ECF2b
+
+cd /home/dev/www/cex.c4ei.net/backend/tasks/wallet-generator/evm/
+truffle migrate --network c4ei

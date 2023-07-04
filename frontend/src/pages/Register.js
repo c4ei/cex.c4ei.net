@@ -36,7 +36,7 @@ export default function Register() {
                 <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
-                Registrarse
+            Check in
             </Typography>
             <Box sx={{ width: '30%', mt: 3 }} component="form" noValidate onSubmit={handleSubmit}>
                 <Grid container spacing={2}>
@@ -92,7 +92,7 @@ export default function Register() {
                     variant="contained"
                     sx={{ mt: 3, mb: 2 }}
                 >
-                    Registrarse
+                    Check in
                 </Button>
                 <Grid container justifyContent="flex-end">
                     <Grid item>
